@@ -1,0 +1,9 @@
+.categories-dropdown .dropdown-item:hover {
+    background: #fc0!important;
+    color: #fff!important;
+}
+
+.categories-dropdown .dropdown-item:focus {
+    background: #fc0!important;
+    color: #fff!important;
+}

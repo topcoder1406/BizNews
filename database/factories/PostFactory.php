@@ -23,7 +23,7 @@ class PostFactory extends Factory
             'author_user_id' => User::all()->random()->id,
             'slug' => fake()->unique()->slug(),
             'title' => fake()->sentence(),
-            'thumbnail' => 'ORBZ28VfPMVjeZ3UFw0rz4vBuYbf8Kt2eqi3mztw.jpg',
+            'thumbnail' => 'example-' . fake()->numberBetween(1, 7) .  '.jpg',
             'excerpt' => '<p>'.implode('</p><p>', fake()->paragraphs(1)).'</p>',
             'body' => '<p>'.implode('</p><p>', fake()->paragraphs(6)).'</p>',
             'views_count' => $this->faker->numberBetween(0, 1000)

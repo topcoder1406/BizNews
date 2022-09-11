@@ -8,7 +8,7 @@
     <li>Set up configurations in .env file</li>
     <li>Run "php artisan key:generate"</li>
     <li>Run "php artisan migrate"</li>
-    <li>Run "php artisan storage:link"</li>
+    <li>Run "php artisan storage:link" and "php artisan config:cache"</li>
 </ol>
 
 <p>Now you can type "php artisan serve" in command line in order to run server.</p>

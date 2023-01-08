@@ -72,7 +72,7 @@ class AdminPostController extends Controller
         $data = $request->validate([
             'category_id' => 'required|exists:categories,id',
             'title' => 'min:2|max:50',
-            'slug' => 'min:2|max:50|unique:posts,slug' . $post->id,
+            'slug' => 'min:2|max:50|unique:posts,slug,' . $post->id,
             'thumbnail' => 'image|max:' . (2 * 1000),
             'excerpt' => 'min:15|max:500',
             'body' => 'min:15|max:5000'
